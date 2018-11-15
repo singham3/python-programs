@@ -1,0 +1,12 @@
+<h1>this is new html file</h1>
+
+<ul>
+    {% for in_demobank in all_demobank %}
+        <li><a href=" /{{ in_demobank.id }}">
+            <h1>{{ in_demobank.name }}</h1>
+
+
+        </a>
+        </li>
+    {% endfor %}
+</ul>

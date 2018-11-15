@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+{% load staticfiles %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'blog/style.css' %}">
+<h1>this detail html page for:-{{ val }}</h1>
+
+
+
+<p>
+    {{ all_val.name }}<br>
+    {{ all_val.value }}<br>
+    {{ all_val.material }}<br>
+    {{ all_val.location }}<br>
+    <img src="/media/{{ all_val.image_url }}" style="width:100%">
+
+
+</p>
+
+<p>
+    {{all_product.name}}<br>
+    {{all_product.textbox}}<br>
+    {{all_productimage_product}}
+</p>
+
+<p>
+    {{all_card.textarea}}
+</p>
+{% endblock %}

@@ -1,0 +1,8 @@
+<p>
+    <h1>Add new blog page</h1>
+    <form method="post" class="blog-form">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">SAVE</button>
+    </form>
+</p>

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+
+<p>
+    <a href="{% url 'blogs:new_blog' %}">ADD NEW</a>
+</p>
+.
+<!-- Page Content -->
+    <h1>this is html page</h1>
+
+<ul>
+    {% for blogs in all_blog %}
+        <li><a href="{% url 'blogs:detail' blogs.id %}" >
+                <h1>{{ blogs.name }}</h1>
+            </a>
+        </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
+
+
+
